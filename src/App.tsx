@@ -1,6 +1,6 @@
-import Dasboard from "./components/Dasboard";
-import Navbar from "./components/Navbar";
-import Saidebar from "./components/Saidebar";
+import Navbar from "./components/layout/Navbar";
+import Saidebar from "./components/layout/Saidebar";
+import Router from "./router";
 
 const App = () => {
   return (
@@ -9,10 +9,7 @@ const App = () => {
       <div className='w-full bg-[#F5F5F5]'>
         <Navbar />
         <div className='w-full pb-8 overflow-y-auto max-h-[calc(100vh-85px)]'>
-          <div className='flex justify-end mr-10 my-7'>
-            <button className='bg-[#6C0AFF] text-white px-10 py-3 text-2xl rounded-full font-bold cursor-pointer'>Transaksi Baru</button>
-          </div>
-          <Dasboard />
+          <Router />
         </div>
       </div>
     </div>
